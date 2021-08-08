@@ -1,7 +1,16 @@
+DROP TABLE IF EXISTS test.performer CASCADE;
+DROP TABLE IF EXISTS test.album CASCADE;
+DROP TABLE IF EXISTS test.track CASCADE;
+DROP TABLE IF EXISTS test.genre CASCADE;
+DROP TABLE IF EXISTS test.employee CASCADE;
+DROP TABLE IF EXISTS test.collection CASCADE;
+DROP TABLE IF EXISTS test.performer_genre CASCADE;
+DROP TABLE IF EXISTS test.performer_album CASCADE;
+DROP TABLE IF EXISTS test.track_collection CASCADE;
+
 create table if not exists test.performer (
 	performer_id integer primary key,
-	performer_name varchar(100),
-	genre_id integer
+	performer_name varchar(100)
 );
 
 create table if not exists test.album (
