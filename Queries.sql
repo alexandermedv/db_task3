@@ -16,8 +16,7 @@ create table if not exists test.performer (
 create table if not exists test.album (
 	album_id integer primary key,
 	album_name varchar(1000),
-	year integer,
-	performer_name varchar(100)
+	year integer
 );
 
 create table if not exists test.track (
